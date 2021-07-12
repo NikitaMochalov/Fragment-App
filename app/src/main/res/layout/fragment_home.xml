@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="30dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/duckduckgo"/>
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Терентьев"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Михаил"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_below="@+id/surname"
+            android:layout_marginLeft="64dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="студент УрФУ"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="35dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Учусь на третьем курсе Уральского федерального университета по направлению Программная инженерия. Планирую поступать в какую-нибудь магистратуру в каком-нибудь университете. Увлекаюсь настолками и машинным обучением. Обожаю УрФУ."
+        android:textSize="22sp"
+        android:layout_marginHorizontal="40dp"
+        android:lineSpacingExtra="10dp"/>
+
+</LinearLayout>
